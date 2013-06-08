@@ -15,3 +15,4 @@ upload:
 	rsync -avz website/* $(shell echo $(ILTASAATANA_WWW_ROOT))/
 	rsync -avz scripts/* $(shell echo $(ILTASAATANA_WWW_ROOT))/scripts/
 	rsync -avz chrome/*.crx $(shell echo $(ILTASAATANA_WWW_ROOT))/chrome/
+	rsync -avz chrome/updates/updates.xml $(shell echo $(ILTASAATANA_WWW_ROOT))/chrome/updates.xml

@@ -5,6 +5,7 @@
 	"description": "Saatana!",
 	"version": "1.0",
 	"homepage_url": "http://iltasaatana.veetipaananen.fi/",
+	"update_url": "http://iltasaatana.veetipaananen.fi/chrome/updates.xml",
 
 	"content_scripts": [
 		{
