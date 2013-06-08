@@ -48,3 +48,7 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+
+div.site {
+	margin: 40px 0;
+}
