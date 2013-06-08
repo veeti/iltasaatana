@@ -1,0 +1,50 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+
+div#content {
+	line-height: 1.75;
+}
+
+::selection {
+	background: #ffe6e6;
+}
+
+div.container {
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+h1, h2, h3 {
+	color: #e60000;
+}
+
+p, h2, h3 {
+	margin: 20px 0;
+}
+
+h1 {
+	font-size: 32px;
+	margin: 40px 0;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+a {
+	color: #e60000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}

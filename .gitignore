@@ -1,0 +1,4 @@
+# chrome extensions
+*.crx
+*.pem
+chrome/**/*.js
