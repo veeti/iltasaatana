@@ -1,7 +1,7 @@
 Ilta-Saatana
 ============
 
-Saatanointilisäosia Ilta-Sanomille ja mahdollisesti muillekkin
+Saatanointilisäosia Ilta-Sanomille ja mahdollisesti muillekin
 uutissivustoille userscript- sekä Chrome- lisäosan muodossa.
 
 Asennus
@@ -12,7 +12,7 @@ Katso [nettisivulta](http://iltasaatana.veetipaananen.fi/).
 Kiitokset
 ---------
 
-Alkuperäinen idea lyhytikäiseltä IltaSaatana.fi-sivustolta.
+Alkuperäinen idea lyhytikäiseltä IltaSaatana.fi- sivustolta.
 
 Shortly in English
 ------------------
