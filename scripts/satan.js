@@ -6,7 +6,7 @@ function satanify(text) {
 	var satan = "saatana";
 
 	// uppercase
-	if (last == last.toUpperCase())
+	if (last == last.toUpperCase() && !/^[0-9]*$/.test(last))
 		satan = satan.toUpperCase();
 
 	// ends with a quote, exclamation or question

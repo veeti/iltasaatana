@@ -47,3 +47,9 @@ test("headline with question", function() {
 	var result = satanify(normal);
 	equal(result, "Kerrostalo romahti saatana?");
 });
+
+test("headline that ends with a number", function() {
+	var normal = "Test 123";
+	var result = satanify(normal);
+	equal(result, "Test 123 saatana");
+});
