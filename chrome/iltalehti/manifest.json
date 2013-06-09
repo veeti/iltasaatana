@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+
+	"name": "Ilta-Saatana Iltalehdelle",
+	"description": "Saatana!",
+	"version": "1.0",
+	"homepage_url": "http://iltasaatana.veetipaananen.fi/",
+	"update_url": "http://iltasaatana.veetipaananen.fi/chrome/updates.xml",
+
+	"content_scripts": [
+		{
+			"matches": ["http://*.iltalehti.fi/*"],
+			"js": ["jquery.js", "satan.js", "iltasaatana.js"],
+			"run_at": "document_end"
+		}
+	]
+}

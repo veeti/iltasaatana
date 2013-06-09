@@ -1,11 +1,16 @@
 all: chrome
 
-chrome: iltasanomat
+chrome: iltasanomat iltalehti
 
 iltasanomat:
 	cp scripts/satan.js chrome/iltasanomat/
 	cp scripts/is.user.js chrome/iltasanomat/iltasaatana.js
 	cp chrome/jquery.js chrome/iltasanomat/
+
+iltalehti:
+	cp scripts/satan.js chrome/iltalehti/
+	cp scripts/il.user.js chrome/iltalehti/iltasaatana.js
+	cp chrome/jquery.js chrome/iltalehti/
 
 clean:
 	rm -rf chrome/**/*.js

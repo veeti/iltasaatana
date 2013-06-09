@@ -4,4 +4,9 @@
 	<app appid="conckffgkeakkoagmgklhfdjegmhaggc">
 		<updatecheck codebase="http://iltasaatana.veetipaananen.fi/chrome/iltasanomat.crx" version="1.0" />
 	</app>
+
+	<!-- ilta-lehti -->
+	<app appid="mhhaidjpcjmomklnagaepemgoolpeemk">
+		<updatecheck codebase="http://iltasaatana.veetipaananen.fi/chrome/iltalehti.crx" version="1.0" />
+	</app>
 </gupdate>
