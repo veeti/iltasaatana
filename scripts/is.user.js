@@ -21,6 +21,9 @@ $(document).ready(function() {
 	
 	$.fn.satanifySidebar = function() {
 		this.each(function() {
+			if ($(this).children().is("img:only-child, .still-image:only-child"))
+				return;
+
 			var numberbullet = $(".numberbullet", this).clone();
 			$(".numberbullet", this).remove();
 		   
