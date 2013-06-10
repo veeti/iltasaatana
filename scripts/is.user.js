@@ -59,7 +59,7 @@ $(document).ready(function() {
 	];
 
 	for (var i = 0; i < ll_classes.length; i++) {
-		$(".link-list." + ll_classes[i] + " li:not(.big-item) a").satanifySidebar();
+		$(".link-list." + ll_classes[i] + " li:not(.big-item) > a").satanifySidebar();
 	}
 
 	// big items
