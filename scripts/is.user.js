@@ -24,6 +24,9 @@ $(document).ready(function() {
 			if ($(this).children().is("img:only-child, .still-image:only-child"))
 				return;
 
+			var still = $(".still-image", this).clone();
+			$(".still-image", this).remove();
+
 			var numberbullet = $(".numberbullet", this).clone();
 			$(".numberbullet", this).remove();
 		   
@@ -32,6 +35,7 @@ $(document).ready(function() {
 			
 			$(this).text(satanify($(this).text()) + "\n");
 			
+			$(this).prepend(still);
 			$(this).prepend(numberbullet);
 			$(this).append(timestamp);
 		});
