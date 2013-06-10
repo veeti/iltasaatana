@@ -2,7 +2,7 @@
 //
 // @name Ilta-Saatana Ilta-Sanomille
 // @description Saatana!
-// @version 1.0
+// @version 1.0.1
 //
 // @match http://*.iltasanomat.fi/*
 //
