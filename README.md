@@ -1,8 +1,7 @@
 Ilta-Saatana
 ============
 
-Saatanointilisäosia Ilta-Sanomille ja mahdollisesti muillekin
-uutissivustoille userscript- sekä Chrome- lisäosan muodossa.
+Saatanointilisäosa Ilta-Sanomille sekä Iltalehdelle.
 
 Asennus
 -------

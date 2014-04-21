@@ -1,3 +1,0 @@
-This directory contains skeleton structures for automatically building
-Chrome extensions based on the user scripts. Use the included Makefile
-to "build" or clean these extensions.

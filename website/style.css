@@ -1,54 +1,54 @@
 body {
-	font-family: Arial, sans-serif;
-	font-size: 16px;
-	text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
 }
 
 div#content {
-	line-height: 1.75;
+  line-height: 1.75;
 }
 
 ::selection {
-	background: #ffe6e6;
+  background: #ffe6e6;
 }
 
 div.container {
-	width: 720px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 h1, h2, h3 {
-	color: #e60000;
+  color: #e60000;
 }
 
 p, h2, h3 {
-	margin: 20px 0;
+  margin: 20px 0;
 }
 
 h1 {
-	font-size: 32px;
-	margin: 40px 0;
+  font-size: 32px;
+  margin: 40px 0;
 }
 
 h2 {
-	font-size: 24px;
+  font-size: 24px;
 }
 
 h3 {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 a {
-	color: #e60000;
-	text-decoration: none;
+  color: #e60000;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 div.site {
-	margin: 40px 0;
+  margin: 40px 0;
 }
