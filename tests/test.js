@@ -30,6 +30,12 @@ test("another headline with quote", function() {
   equal(result, '"Pöyristyttävä tunnekuohu saatana"');
 });
 
+test("another headline with fancy quote", function() {
+  var normal = '”Kahvakiekko on lähtenyt ihan täysin lapasista SM-finaaleissa”';
+  var result = satanify(normal);
+  equal(result, '”Kahvakiekko on lähtenyt ihan täysin lapasista SM-finaaleissa saatana”');
+});
+
 test("headline with exclamation", function() {
   var normal = "Kerrostalo romahti!";
   var result = satanify(normal);

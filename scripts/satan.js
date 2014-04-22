@@ -10,7 +10,7 @@ function satanify(text) {
     satan = satan.toUpperCase();
 
   // ends with a quote, exclamation or question
-  if (text.match(/.*[!?"']$/)) {
+  if (text.match(/.*[!?"'”]$/)) {
     return text.slice(0, text.length - 1) + " " + satan + text.slice(text.length - 1, text.length);
   }
 
