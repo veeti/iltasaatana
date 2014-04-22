@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name Ilta-Saatana Ilta-Lehdelle
+// @name Ilta-Saatana Iltalehdelle
 // @description Saatana!
 // @version 2.0.0
 //
