@@ -2,6 +2,9 @@ $(function() {
   // Main body titles
   $('a h2, a h3, h2 a, h3 a').satanify();
 
+  // Breaking news
+  $('[id^=breakingNewsItem] a').satanify();
+
   // Sidebar most read
   $('h2.currentlyread').satanify();
   $('[id^=mostRead_] .numberbullet-list li a').satanify(' ');
