@@ -59,3 +59,27 @@ test("headline that ends with a number", function() {
   var result = satanify(normal);
   equal(result, "Test 123 saatana");
 });
+
+test("headline with quote and exclamation", function() {
+  var normal = '"Tämä on mahtavaa!"';
+  var result = satanify(normal);
+  equal(result, '"Tämä on mahtavaa saatana!"');
+});
+
+test("headline with uppercase quote and exclamation", function() {
+  var normal = '"Tämä on MAHTAVAA!"';
+  var result = satanify(normal);
+  equal(result, '"Tämä on MAHTAVAA SAATANA!"');
+});
+
+test("empty text", function() {
+  var normal = '';
+  var result = satanify(normal);
+  equal(result, '');
+});
+
+test("gibberish", function() {
+  var normal = '""""!!???';
+  var result = satanify(normal);
+  equal(result, '');
+});
