@@ -4,7 +4,7 @@ function satanify(text) {
 
   var satan = ' saatana';
   var insertAt = text.length - 1;
-  var punctuation = "!?\"'”".split('');
+  var punctuation = "!?\"'”.".split('');
 
   // Insert before punctuation
   while (punctuation.indexOf(text[insertAt]) > -1 && insertAt >= 0) {

@@ -72,6 +72,12 @@ test("headline with uppercase quote and exclamation", function() {
   equal(result, '"Tämä on MAHTAVAA SAATANA!"');
 });
 
+test("headline with ellipsis", function() {
+  var normal = '"Rouva Palander ei meinaa pysyä pöksyissä..."';
+  var result = satanify(normal);
+  equal(result, '"Rouva Palander ei meinaa pysyä pöksyissä saatana..."');
+});
+
 test("empty text", function() {
   var normal = '';
   var result = satanify(normal);
