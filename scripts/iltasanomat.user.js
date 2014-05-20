@@ -1,6 +1,7 @@
 $(function() {
   // Main body titles
   $('a h2, a h3, h2 a, h3 a').satanify();
+  $('#main ul.link-list a').satanify();
 
   // Breaking news
   $('[id^=breakingNewsItem] a').satanify();
