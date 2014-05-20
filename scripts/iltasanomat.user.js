@@ -3,6 +3,9 @@ $(function() {
   $('a h2, a h3, h2 a, h3 a').satanify();
   $('#main ul.link-list a').satanify();
 
+  // Surveys
+  $('[class^=quick-survey] h3, a.survey-button').satanify();
+
   // Breaking news
   $('[id^=breakingNewsItem] a').satanify();
 
