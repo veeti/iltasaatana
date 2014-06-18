@@ -1,4 +1,3 @@
-// Welcome to JavaScript
 $(function() {
   $.fn.satanify = function(suffix) {
     var suffix = suffix || '';
