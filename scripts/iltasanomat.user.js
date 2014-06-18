@@ -7,7 +7,7 @@ $(function() {
     $(this).each(function() {
       // Get the last row.
       var last = $('span:last', this);
-      var original = $(last).text();
+      var original = $(last).text().trim();
       var satanified = satanify(original);
 
       // Split into the part before the saatana and the one after to account for
