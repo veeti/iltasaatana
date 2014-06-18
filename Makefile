@@ -22,3 +22,4 @@ iltasanomat: builddir
 iltalehti: builddir
 	cat $(SCRIPT_DIR)/iltalehti.header.js $(LIBRARY_FILES) $(SCRIPT_DIR)/iltalehti.user.js > build/iltalehti.user.js
 
+.PHONY: all clean upload builddir iltasanomat iltalehti
