@@ -1,6 +1,15 @@
 $(function() {
   // Body headings
-  $('h1.juttuotsikko span.otsikko:last-of-type').satanify();
+  $('h1.juttuotsikko span.otsikko:last-of-type').each(function() {
+    // Some of the center title spans on Iltalehti have manual <br /> elements
+    // inside of them, which our satanify plugin isn't smart enough to handle
+    // yet. Hack around it with this for now.
+    var contents = $(this).contents();
+    if (contents != null && contents.length > 0) {
+      var last = contents.last()[0];
+      last.textContent = satanify(last.textContent);
+    }
+  });
 
   // Left
   $('#container_vasen p a:not(.palstakuva)').satanify(' ');
