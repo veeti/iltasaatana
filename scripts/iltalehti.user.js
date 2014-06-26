@@ -10,6 +10,7 @@ $(function() {
       last.textContent = satanify(last.textContent);
     }
   });
+  $('li a[class^=bi3dArtId-]').satanify();
 
   // Left
   $('#container_vasen p a:not(.palstakuva)').satanify(' ');
