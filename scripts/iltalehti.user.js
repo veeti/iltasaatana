@@ -21,5 +21,8 @@ $(function() {
 
   // Footer
   $('.footer_luetuimmat_container .list-title').satanify();
+
+  // Individual page headings
+  $('#container_keski h1.juttuotsikko:first').satanify();
 });
 
