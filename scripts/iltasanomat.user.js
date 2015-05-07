@@ -5,8 +5,11 @@ $(function() {
    */
   $.fn.satanifyFitted = function() {
     $(this).each(function() {
-      // Get the last row.
-      var last = $('span:last', this);
+      // Find the last row of the title. For whatever reason, some titles include
+      // trailing span blocks with no contents, so filter them out.
+      var last = $('span', this).filter(function() {
+        return $(this).text().trim().length > 0;
+      }).last();
       var original = $(last).text().trim();
       var satanified = satanify(original);
 
@@ -21,12 +24,12 @@ $(function() {
 
       // Update and append new header.
       $(last).text(one);
-      $(this).append($('<span />').addClass($(last).attr('class')).text(two));
+      $(this).append($(last).clone().text(two));
     });
   };
 
   // Main body titles
-  $('[id^=fitted-heading-] a').satanifyFitted();
+  $('[id^=fitted-heading-]').satanifyFitted();
   $('a h2, a h3, h2 a, h3 a').satanify();
   $('#main ul.link-list a').satanify();
 
@@ -36,20 +39,13 @@ $(function() {
   // Breaking news
   $('[id^=breakingNewsItem] a').satanify();
 
-  // Sidebar most read
-  $('h2.currentlyread').satanify();
-  $('[id^=mostRead_] .numberbullet-list li a').satanify(' ');
-
-  // Sidebar latest
-  $('[id^=latestArticles-] h2:first').satanify();
-
-  // Sidebar most commented
-  $('.most-commented-text').satanify(' ');
-
-  // Generic sidebar link lists
-  $('[id^=configLinkList] li a, [id^=latestArticles] li a').satanify(' ');
+  // Sidebar links
+  $('.is-list:not(.istv) h2').satanify();
+  $('.is-list.most-read div.content p').satanify(' ');
+  $('.is-list:not(.most-read):not(.lifestyle) div.content').satanify(' ');
+  $('.is-list li.list-item span:not(.index)').satanify(' ');
 
   // Individual news page titles
-  $('#content #main h1:first').satanify();
+  $('article.single-article h1:first').satanify();
 });
 
