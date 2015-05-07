@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Ilta-Saatana Ilta-Sanomille
 // @description Saatana!
-// @version 2.1.1
+// @version 2.1.2
 // @namespace http://iltasaatana.veetipaananen.fi/
 //
 // @include http://www.iltasanomat.fi/*
